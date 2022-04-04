@@ -3,7 +3,7 @@ import { Color } from '../types/Color';
 
 interface Props {
   colors: Color[];
-  onColorSelect: Dispatch<SetStateAction<Color | null>>;
+  onColorSelect: (color: Color) => void;
 }
 
 const ColorPicker = ({ colors, onColorSelect }: Props) => {
