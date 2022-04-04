@@ -7,6 +7,7 @@ import Episode from '../types/Episode';
 
 const App = () => {
   const [colorName, setColorName] = useState<string | null>(null);
+  const [numEpisodes, setNumEpisodes] = useState<number | null>(null);
   const [episode, setEpisode] = useState<Episode | null>(null);
 
   const onColorSelect = (color: Color) => {
@@ -18,6 +19,8 @@ const App = () => {
 
       const colorEpisodes = episodesByColor[color];
       const numColorEpisodes = colorEpisodes.length;
+      setNumEpisodes(numColorEpisodes);
+
       console.log(
         `Found ${numColorEpisodes} episodes with color ${colorName} (${color})`
       );
@@ -31,14 +34,21 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="app">
+      <h2>
+        What color cardigan should Mister Rogers wear today? Select a color
+      </h2>
+
       <ColorPicker
         colors={Object.keys(episodesByColor) as Array<Color>}
         onColorSelect={onColorSelect}
       />
 
       {colorName && (
-        <h2>Mister Rogers wears a {colorName} cardigan in this episode:</h2>
+        <h2>
+          Mister Rogers wears a {colorName} cardigan in {numEpisodes} episodes.
+          Here is one:
+        </h2>
       )}
 
       <EpisodeDetail episode={episode} />

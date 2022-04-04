@@ -13,9 +13,7 @@ const ColorPicker = ({ colors, onColorSelect }: Props) => {
         key={color}
         style={{ backgroundColor: color }}
         onClick={() => onColorSelect(color)}
-      >
-        &nbsp;&nbsp;&nbsp;
-      </button>
+      ></button>
     );
   });
 

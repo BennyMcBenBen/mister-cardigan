@@ -17,11 +17,7 @@ const EpisodeDetail = ({ episode }: Props) => {
       </div>
     );
   } else {
-    return (
-      <h2>
-        Pick the color of the cardigan you want Mister Rogers to wear today.
-      </h2>
-    );
+    return <div></div>;
   }
 };
 

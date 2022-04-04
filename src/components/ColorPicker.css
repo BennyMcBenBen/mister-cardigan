@@ -3,3 +3,9 @@
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
+.color-picker button {
+  height: 30px;
+  border-width: 1px;
+  cursor: pointer;
+}
