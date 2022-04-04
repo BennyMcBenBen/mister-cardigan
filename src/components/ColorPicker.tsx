@@ -1,4 +1,4 @@
-import { Color } from '../types/Color';
+import { Color, colorLabels } from '../types/Color';
 import './ColorPicker.css';
 
 interface Props {
@@ -13,6 +13,7 @@ const ColorPicker = ({ colors, onColorSelect }: Props) => {
         key={color}
         style={{ backgroundColor: color }}
         onClick={() => onColorSelect(color)}
+        aria-label={colorLabels[color]}
       ></button>
     );
   });
