@@ -23,7 +23,7 @@ export const colorLabels = {
   '#a5b9f7': 'Light Sky Blue',
   '#b4a588': 'Chino',
   '#b83255': 'Old Rose',
-  '#cc6600': 'Tenne',
+  '#cc6600': 'Tawny',
   '#ccd2f2': 'Quartz',
   '#dfd799': 'Sapling',
   '#e4ce94': 'Double Colonial White',

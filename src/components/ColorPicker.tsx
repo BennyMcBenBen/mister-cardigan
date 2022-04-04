@@ -1,5 +1,5 @@
-import { Dispatch, SetStateAction } from 'react';
 import { Color } from '../types/Color';
+import './ColorPicker.css';
 
 interface Props {
   colors: Color[];
