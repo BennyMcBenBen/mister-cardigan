@@ -1,11 +1,13 @@
 .color-picker {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }
 
 .color-picker button {
-  height: 30px;
+  height: 100px;
+  width: 120px;
   border-width: 1px;
   cursor: pointer;
+  background-color: white;
 }

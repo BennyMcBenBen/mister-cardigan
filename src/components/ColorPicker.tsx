@@ -1,4 +1,5 @@
 import { Color, colorLabels } from '../types/Color';
+import CardiganIcon from './CardiganIcon';
 import './ColorPicker.css';
 
 interface Props {
@@ -11,10 +12,11 @@ const ColorPicker = ({ colors, onColorSelect }: Props) => {
     return (
       <button
         key={color}
-        style={{ backgroundColor: color }}
         onClick={() => onColorSelect(color)}
         aria-label={colorLabels[color]}
-      ></button>
+      >
+        <CardiganIcon height="90px" width="90px" color={color} />
+      </button>
     );
   });
 
