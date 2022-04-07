@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import ColorPicker from './ColorPicker';
 import EpisodeDetail from './EpisodeDetail';
-import CardiganIcon from './CardiganIcon';
 import episodesByColor from '../data/episodes_by_color.json';
 import { Color, colorLabels } from '../types/Color';
 import Episode from '../types/Episode';
