@@ -15,7 +15,7 @@ const ColorPicker = ({ colors, onColorSelect }: Props) => {
         onClick={() => onColorSelect(color)}
         aria-label={colorLabels[color]}
       >
-        <CardiganIcon height="90px" width="90px" color={color} />
+        <CardiganIcon height="50px" width="50px" color={color} />
       </button>
     );
   });

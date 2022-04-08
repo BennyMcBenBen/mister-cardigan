@@ -1,12 +1,12 @@
 .color-picker {
   display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
 }
 
 .color-picker button {
-  height: 100px;
-  width: 120px;
+  height: 60px;
+  width: 70px;
   border-width: 1px;
   cursor: pointer;
   background-color: white;

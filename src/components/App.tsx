@@ -35,9 +35,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <h2>
-        What color cardigan should Mister Rogers wear today? Select a color
-      </h2>
+      <h2>What should Mister Rogers wear today? Select a cardigan</h2>
 
       <ColorPicker
         colors={Object.keys(episodesByColor) as Array<Color>}
